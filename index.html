@@ -1,92 +1,31 @@
 html
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Simple Note App</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f4f4;
-  }
-  h1 {
-    text-align: center;
-  }
-  #noteInput {
-    width: 70%;
-    padding: 10px;
-    font-size: 16px;
-  }
-  #addBtn {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  #notes {
-    margin-top: 20px;
-    list-style-type: none;
-    padding: 0;
-  }
-  .note {
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    border-radius: 4px;
-  }
-  .deleteBtn {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background: #e74c3c;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-  .deleteBtn:hover {
-    background: #c0392b;
-  }
-</style>
+<title>Simple Web Page</title>
 </head>
 <body>
-<h1>Simple Note App</h1>
-<div style="display:flex; justify-content:center; margin-bottom:20px;">
-  <input type="text" id="noteInput" placeholder="Enter your note here" />
-  <button id="addBtn">Add Note</button>
-</div>
-<ul id="notes"></ul>
-
-<script>
-  const addBtn = document.getElementById('addBtn');
-  const noteInput = document.getElementById('noteInput');
-  const notesList = document.getElementById('notes');
-
-  addBtn.addEventListener('click', () => {
-    const noteText = noteInput.value.trim();
-    if (noteText !== '') {
-      const li = document.createElement('li');
-      li.className = 'note';
-
-      const span = document.createElement('span');
-      span.innerText = noteText;
-
-      const deleteBtn = document.createElement('button');
-      deleteBtn.innerText = 'Delete';
-      deleteBtn.className = 'deleteBtn';
-      deleteBtn.onclick = () => {
-        notesList.removeChild(li);
-      };
-
-      li.appendChild(span);
-      li.appendChild(deleteBtn);
-      notesList.appendChild(li);
-      noteInput.value = '';
-    }
-  });
-</script>
+<h1>Welcome to the Simple Web Page</h1>
+<p>This is a basic webpage to demonstrate editing a README file and a minimal web app.</p>
 </body>
 </html>
+---
+
+# README.md
+
+## Overview
+This project is a simple web page that displays a welcoming message. It serves as a basic example for documenting code updates and understanding web development essentials.
+
+## Setup
+No setup required. You can simply open the `index.html` in your web browser to view the page.
+
+## Usage
+Open the `index.html` file in any modern web browser to view the webpage content.
+
+## Improvements Made from Previous Version (Round 2)
+- Added a specific marker `ROUND-2-EDIT-1738f3b6-f830-4c89-b84d-dd9eba9fe712` in the README to indicate the round 2 update.
+- Enhanced the README structure to include clear sections for overview, setup, usage, and update notes.
+
+---
